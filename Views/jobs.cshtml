@@ -1,0 +1,9 @@
+<h1>Resume</h1>
+<ul>
+  @foreach (var place in Model)
+  {
+    <li><a href='/jobs/@place.GetId()'>@place.GetCity()</a></li>
+
+  }
+</ul>
+<a href='/jobs/new'>Add new job</a>
